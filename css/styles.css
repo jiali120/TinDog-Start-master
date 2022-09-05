@@ -1,0 +1,97 @@
+
+body{
+    font-family: "Montserrat";
+    
+}
+
+#title{
+    background-color: #ff4c68;
+     /* #000 is black */
+    color: #fff;
+   
+}
+
+h1{
+    font-family: "Montserrat-Black";
+    /* rem means font size of the root element */
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h3{
+    font-family: "Montserrat-Bold";
+    font-size: 1.5rem;
+}
+
+p{
+    color:#8f8f8f;
+}
+
+.container-fluid{
+    /*3%for top and botom, 15%for left and right 是css中的一种相对长度单位。
+    margin是盒子的外边距，即盒子与盒子之间的距离，而padding是内边距，是盒子的边与盒子内部元素的距离。*/
+    padding: 3% 15%;
+}
+
+
+/*Navigation Bar*/
+
+.navbar{
+    padding: 0 0 4.5rem; 
+}
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    /* 2.5 * 18px = 45px;*/
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    /*left and riht have 18px space*/
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat-light";
+}
+
+/*Download Buttons*/
+
+.download-button{
+    /*top right left bottom*/
+    margin: 5% 3% 5% 0;
+}
+
+/* title image */
+
+.title-image{
+    width: 60%;
+    /*search on google: rotate image css
+    https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function/rotate*/
+    transform: rotate(25deg);
+}
+
+/*features section*/
+
+#features{
+
+    padding: 7% 15%;
+
+}
+
+.feature-box{
+    /*word in center*/
+    text-align: center;
+    padding: 5%;
+}
+
+.fas{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.fas:hover{
+    color: #ff4c68;
+}
