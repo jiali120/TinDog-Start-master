@@ -1,6 +1,6 @@
 
 body{
-    font-family: "Montserrat";
+    font-family: "Poppins", sans-serif;
     
 }
 
@@ -12,15 +12,25 @@ body{
 }
 
 h1{
-    font-family: "Montserrat-Black";
+    font-family: "Poppins", sans-serif;
     /* rem means font size of the root element */
     font-size: 3.5rem;
     line-height: 1.5;
+    font-weight: bolder;
+}
+
+h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    /*give the text space*/
+    line-height:1.5;
+    font-weight: bolder;
 }
 
 h3{
-    font-family: "Montserrat-Bold";
+    font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
+    font-weight: bolder;
 }
 
 p{
@@ -94,4 +104,51 @@ p{
 
 .fas:hover{
     color: #ff4c68;
+}
+
+/* testimonials section
+
+
+a{
+    font-weight: bolder;
+}*/
+
+#testimonials{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ef8172;
+    color:#fff;
+
+}
+
+.testimonial-image{
+    /* change the picture size small*/
+    width: 10%;
+    /* change the dog picture become circle*/
+    border-radius: 100%;
+    margin: 20px;
+
+}
+
+.carousel-item{
+    /*change the left and right botton for slide*/
+    padding: 7% 15%;
+
+}
+
+
+/* Press section for the 4 logos under the cicle dog pic*/
+#press{
+
+    background-color: #ef8172;
+    text-align: center;
+
+}
+
+.press-logo{
+    width: 15%;
+
+    /*top 0, left and right is 20, bottom is 80*/
+    margin: 0 20px 80px;
+    
 }
