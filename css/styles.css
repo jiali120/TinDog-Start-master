@@ -1,34 +1,35 @@
+/*to test website if it good use for a phone: 
+https://search.google.com/test/mobile-friendly 
 
+app brewery course resources download::
+https://www.appbrewery.co/p/web-development-course-resources */
 body{
     font-family: "Poppins", sans-serif;
     
 }
 
-#title{
-    background-color: #ff4c68;
-     /* #000 is black */
-    color: #fff;
-   
-}
-
-h1{
+h1, h2, h3{
     font-family: "Poppins", sans-serif;
+
+}
+h1{
+    
     /* rem means font size of the root element */
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: bolder;
 }
-
+/* 
 h2{
-    font-family: "Poppins", sans-serif;
+    
     font-size: 3rem;
-    /*give the text space*/
+    /*give the text space
     line-height:1.5;
-    font-weight: bolder;
-}
+    
+} */
 
 h3{
-    font-family: "Poppins", sans-serif;
+   
     font-size: 1.5rem;
     font-weight: bolder;
 }
@@ -37,10 +38,23 @@ p{
     color:#8f8f8f;
 }
 
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+#title{
+    background-color: #ff4c68;
+     /* #000 is black */
+    color: #fff;   
+}
+
+
+
 .container-fluid{
     /*3%for top and botom, 15%for left and right 是css中的一种相对长度单位。
     margin是盒子的外边距，即盒子与盒子之间的距离，而padding是内边距，是盒子的边与盒子内部元素的距离。*/
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 
@@ -77,10 +91,20 @@ p{
 /* title image */
 
 .title-image{
-    width: 60%;
+    width: 30%;
     /*search on google: rotate image css
     https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function/rotate*/
     transform: rotate(25deg);
+
+    /*position：absolute这个是绝对定位； 是相对于浏览器的定位。
+     比如：position：absolute；left:20px;top:80px; 
+     这个容器始终位于距离浏览器左20px,距离浏览器上80px的这个位置。 
+     position：relative是相对定位，是相对于前面的容器定位的。*/
+    position: absolute;
+    /*right: 15%;
+
+    change picture in different layer */
+    
 }
 
 /*features section*/
@@ -88,6 +112,9 @@ p{
 #features{
 
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
 
 }
 
@@ -107,12 +134,14 @@ p{
 }
 
 /* testimonials section
-
-
 a{
     font-weight: bolder;
 }*/
 
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
 #testimonials{
     padding: 7% 15%;
     text-align: center;
@@ -149,6 +178,68 @@ a{
     width: 15%;
 
     /*top 0, left and right is 20, bottom is 80*/
-    margin: 0 20px 80px;
+    margin: 0 20px 60px;
     
+}
+
+/* pricing section */
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+    font-weight: bolder;
+    /*give the text space*/
+    line-height:1.5;
+}
+
+.price-test{
+    font-size: 3rem;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+    line-height: 1.5;
+
+}
+.bb{
+    padding-left: 80px;
+    padding-right: 80px;
+    
+}
+
+
+
+@media(max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0);
+
+    }
+}
+
+
+/*Call to Action */
+
+#cta{
+    background-color: #ff4c68;
+    color: #fff;
+    text-align: center;
+}
+
+.h3-word{
+    font-family: "Poppins", sans-serif;
+    font-size: 2.0rem;
+    text-align: center;
+    padding: 80px 0 0px;
+}
+
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+.social-icon{
+    margin: 20px 10px;
 }
